@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
     return (
         <>
-            <div className="aboutImagesContainer">
+            <div className="aboutImagesContainer section">
                 <div class="mousemove">
                     <div class="posab c1 mouse" value="2"><img src="./img/about/1.png" className="img-responsive" alt="" /></div>
                     <div class="posab c2 mouse" value="3"><img src="./img/about/2.png" className="img-responsive" alt="" /></div>

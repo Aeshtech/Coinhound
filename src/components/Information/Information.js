@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function Information() {
     return (
-        <section className="infoSection text-left d-flex align-items-center">
-            <img src="./img/trackingHound1.svg" className="img-responsive float-end" alt="" />
+        <section className="infoSection section text-start d-flex align-items-center">
+            <img src="./img/trackingHound1.svg" className="img-responsive right_image" alt="" />
             <div className="clearboth"></div>
             <div className="container">
                 <div className="row">
                     <div className="col-sm-5">
-                        <h3> Coinhound is smart <span> It scans, tracks and<br />classifies data for you.</span></h3>
+                        <h3 className='text-dark text-start'> Coinhound is smart <span className='w-100'> It scans, tracks and<br />classifies data for you.</span></h3>
                         <p>Coinhound tracks data all over the crypto network and translates it to easily understand language that people including traders, investors and researchers can use to get an advantage.</p>
                     </div>
                 </div>

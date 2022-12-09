@@ -10,9 +10,11 @@ body {
   position: relative;
   height: 100vh;
 }
+
 .img-responsive {
   max-width: 100%;
 }
+
 /* --------------Navbar---------------- */
 
 .navbar .logo {
@@ -62,18 +64,18 @@ body {
 }
 
 
-.heroSection .title{
+.heroSection .title {
   width: 992px;
 }
 
-.heroSection .title h1{
+.heroSection .title h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 60px;
   line-height: 75px;
 }
 
-.heroSection .subTitle{
+.heroSection .subTitle {
   font-size: 26px;
   line-height: 32.68px;
   text-decoration: none;
@@ -81,7 +83,7 @@ body {
 }
 
 /* --------------About Section---------------- */
-.aboutSection{
+.aboutSection {
   background-image: url("../public/img/about/fullbg.png");
   background-position: top center;
   background-size: cover;
@@ -89,6 +91,7 @@ body {
   background: #3c257d;
   overflow: hidden;
 }
+
 .aboutSection h3 {
   font-weight: 600;
   font-size: 40px;
@@ -98,80 +101,97 @@ body {
   letter-spacing: 0.005em;
   color: #fff;
 }
+
 .aboutSection h3 span {
-    display: block;
-    font-size: 46px;
-    line-height: 60px;
-    font-weight: 400;
-    width: 64%;
-    margin: auto;
+  display: block;
+  font-size: 46px;
+  line-height: 60px;
+  font-weight: 400;
+  width: 64%;
+  margin: auto;
 }
 
 .aboutImagesContainer {
   position: relative;
   overflow: hidden;
 }
+
 .posab {
   position: absolute;
   width: 11%;
 }
-.c1{
+
+.c1 {
   right: 0.5%;
   top: 50%;
 }
-.c2{
+
+.c2 {
   left: 45%;
-  bottom:0.5%;
+  bottom: 0.5%;
 }
-.c3{
+
+.c3 {
   left: 26%;
   top: 12%;
 }
-.c4{
+
+.c4 {
   left: 58%;
   bottom: 10%;
 }
-.c5{
+
+.c5 {
   right: 3%;
   top: 12%;
 }
-.c6{
+
+.c6 {
   left: 9%;
   top: 40%;
 }
-.c7{
+
+.c7 {
   left: 1%;
   bottom: -2%;
 }
-.c8{
+
+.c8 {
   left: 3%;
   top: -6%;
 }
-.c9{
+
+.c9 {
   right: 15%;
   bottom: 10%;
 }
-.c10{
+
+.c10 {
   left: 1%;
   bottom: 20%;
 }
-.c11{
+
+.c11 {
   right: 3%;
   bottom: 5%;
 }
-.c12{
+
+.c12 {
   right: 16%;
   top: 10%;
 }
-.c13{
+
+.c13 {
   left: 0%;
   top: 10%;
 }
-.c14{
+
+.c14 {
   right: 0%;
   top: -2%;
 }
-.c15{
+
+.c15 {
   left: 26%;
   bottom: 12%;
 }
@@ -182,4 +202,21 @@ body {
   height: 100%;
   width: 100%;
   z-index: 1;
+}
+
+/* --------------About Section---------------- */
+.right_image {
+  position: absolute;
+  top: 8%;
+  right: 0px;
+  width: 43%;
+}
+
+.infoSection p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.005em;
+  color: #737373;
 }
