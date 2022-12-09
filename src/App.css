@@ -1,38 +1,178 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+}
+
+/* --------------Navbar---------------- */
+
+.navbar .logo {
+  width: 64.37px;
+  height: 64.35px;
+  margin-left: 48.07px;
+}
+
+.navbar-nav .nav-item {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
+  letter-spacing: 0.2em;
+  padding: 15px 26px !important;
+  color: #000000 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav .nav-item a {
+  color: #000000 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar .navBtn {
+  background: #2AAF44;
+  border-radius: 5px;
+  color: #fff !important;
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+  margin-left: 30px;
+  font-weight: 500;
+  width: 268px;
+  height: 47px;
+  margin-right: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ------------Hero Section--------------- */
+.hero {
+  bottom: -80px;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: 75%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.heroSection .title{
+  width: 992px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroSection .title h1{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 75px;
+}
+
+.heroSection .subTitle{
+  font-size: 26px;
+  line-height: 32.68px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+/* --------------About Section---------------- */
+.aboutSection{
+  background-image: url("../public/img/about/fullbg.png");
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  background: #3c257d;
+  overflow: hidden;
+}
+.aboutSection h3 {
+  font-weight: 600;
+  font-size: 40px;
+  font-size: 60px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #fff;
+}
+.aboutSection h3 span {
+    display: block;
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 400;
+    width: 64%;
+    margin: auto;
+}
+
+.aboutImagesContainer {
+  position: relative;
+  overflow: hidden;
+}
+.c1{
+  right: 0.5%;
+  top: 50%;
+}
+.c2{
+  left: 45%;
+  bottom:0.5%;
+}
+.c3{
+  left: 26%;
+  top: 12%;
+}
+.c4{
+  left: 58%;
+  bottom: 10%;
+}
+.c5{
+  right: 3%;
+  top: 12%;
+}
+.c6{
+  left: 9%;
+  top: 40%;
+}
+.c7{
+  left: 1%;
+  bottom: -2%;
+}
+.c8{
+  left: 3%;
+  top: -6%;
+}
+.c9{
+  right: 15%;
+  bottom: 10%;
+}
+.c10{
+  left: 1%;
+  bottom: 20%;
+}
+.c11{
+  right: 3%;
+  bottom: 5%;
+}
+.c12{
+  right: 16%;
+  top: 10%;
+}
+.c13{
+  left: 0%;
+  top: 10%;
+}
+.c14{
+  right: 0%;
+  top: -2%;
+}
+.c15{
+  left: 26%;
+  bottom: 12%;
+}
+.aboutImagesContainer .mousemove {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
