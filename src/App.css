@@ -109,6 +109,10 @@ body {
   position: relative;
   overflow: hidden;
 }
+.posab {
+  position: absolute;
+  width: 11%;
+}
 .c1{
   right: 0.5%;
   top: 50%;
@@ -169,6 +173,7 @@ body {
   left: 26%;
   bottom: 12%;
 }
+
 .aboutImagesContainer .mousemove {
   position: absolute;
   top: 0px;
