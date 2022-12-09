@@ -12,16 +12,16 @@ export default function Information() {
                         <p>Coinhound tracks data all over the crypto network and translates it to easily understand language that people including traders, investors and researchers can use to get an advantage.</p>
                     </div>
                 </div>
-                <div className="borderboxes">
+                <div className="rectangles">
                     <div className="row">
                         <div className="col-sm-6">
-                            <div className="borderbox">
+                            <div className="rectangle">
                                 <h4>500,000+</h4>
                                 <p>Wallets to be scanned daily</p>
                             </div>
                         </div>
                         <div className="col-sm-6">
-                            <div className="borderbox">
+                            <div className="rectangle">
                                 <h4>3,500,000+</h4>
                                 <p>
                                     Transactions to be tracked</p>

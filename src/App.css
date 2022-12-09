@@ -220,3 +220,45 @@ body {
   letter-spacing: 0.005em;
   color: #737373;
 }
+
+.section h3 {
+  font-weight: 600;
+  font-size: 40px;
+  font-size: 60px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #fff;
+}
+.section h3 span {
+    display: block;
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 400;
+    width: 64%;
+    margin: auto;
+}
+
+.rectangles {
+    margin-top: 30px;
+}
+.rectangle p {
+  color: #121212;
+  margin-bottom: 0px;
+  font-size: 35px;
+  font-weight: 500;
+} 
+.rectangle {
+  border: 1.5px solid #D0D0D0;
+  border-radius: 10px;
+  padding: 30px 45px;
+  margin-top: 15px;
+  padding-bottom: 50px;
+}
+.rectangle h4 {
+font-size: 40px;
+line-height: 48px;
+font-size: 75px;
+line-height: 94px;
+margin-bottom: 0px;
+}
