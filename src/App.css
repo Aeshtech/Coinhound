@@ -116,82 +116,82 @@ body {
   overflow: hidden;
 }
 
-.posab {
+.animalPosition {
   position: absolute;
   width: 11%;
 }
 
-.c1 {
+.p1 {
   right: 0.5%;
   top: 50%;
 }
 
-.c2 {
+.p2 {
   left: 45%;
   bottom: 0.5%;
 }
 
-.c3 {
+.p3 {
   left: 26%;
   top: 12%;
 }
 
-.c4 {
+.p4 {
   left: 58%;
   bottom: 10%;
 }
 
-.c5 {
+.p5 {
   right: 3%;
   top: 12%;
 }
 
-.c6 {
+.p6 {
   left: 9%;
   top: 40%;
 }
 
-.c7 {
+.p7 {
   left: 1%;
   bottom: -2%;
 }
 
-.c8 {
+.p8 {
   left: 3%;
   top: -6%;
 }
 
-.c9 {
+.p9 {
   right: 15%;
   bottom: 10%;
 }
 
-.c10 {
+.p10 {
   left: 1%;
   bottom: 20%;
 }
 
-.c11 {
+.p11 {
   right: 3%;
   bottom: 5%;
 }
 
-.c12 {
+.p12 {
   right: 16%;
   top: 10%;
 }
 
-.c13 {
+.p13 {
   left: 0%;
   top: 10%;
 }
 
-.c14 {
+.p14 {
   right: 0%;
   top: -2%;
 }
 
-.c15 {
+.p15 {
   left: 26%;
   bottom: 12%;
 }
