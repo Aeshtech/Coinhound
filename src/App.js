@@ -5,6 +5,8 @@ import Home from './components/Home/Home';
 import Information from './components/Information/Information';
 import ScndRange from './components/ScndRange/ScndRange';
 import { Scroller } from 'react-fully-scrolled';
+import ComingSoon from './components/ComingSoon/ComingSoon';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Information />
         <Feature />
         <ScndRange />
+        <ComingSoon/>
+        <Footer/>
       </Scroller>
     </>
   );
