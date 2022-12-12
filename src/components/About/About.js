@@ -34,7 +34,7 @@ export default function About() {
                 </div>
                 <section className="aboutSection text-center d-flex align-items-center">
                     <div className="glow"></div>
-                    <div className="container">
+                    <div className="container" style={{zIndex:"9999"}}>
                         <div className="text"><h3>Coinhound is on a mission, <span>
                             to make the decentralized space fun, safer and smarter for everyone.</span></h3></div>
                     </div>
