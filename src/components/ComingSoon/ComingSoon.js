@@ -24,25 +24,25 @@ export default function ComingSoon() {
                         <div className="col-sm-7 position-relative">
                             <div className="row cards postion-relative row-cols-2">
 
-                                <div className="col">
+                                <div className="col-6">
                                     <div className="card1">
                                         <h4>Coinhound Incentivized training programs</h4>
                                         <p>Education, training and competitions for the decentralized community for an smarter Web 3.0</p>
                                     </div>
                                 </div>
-                                <div className="col">
+                                <div className="col-6">
                                     <div className="card2">
                                         <h4>Smart solutions for portfolio management</h4>
                                         <p>We will be utilizing the data we collect to build solutions that will help you manage your portfolio.</p>
                                     </div>
                                 </div>
-                                <div className="col">
+                                <div className="col-6">
                                     <div className="card3">
                                         <h4>Machine learning for advance insights</h4>
                                         <p>Artificial intelligence will go hand in hand with the data we collect so you make more informed decisions.</p>
                                     </div>
                                 </div>
-                                <div className="col">
+                                <div className="col-6">
                                     <div className="card4">
                                         <h4>Making crypto more digestible to all</h4>
                                         <p>To help advance blockchain adoption, Coinhound will build solutions specifically to help new users.</p>

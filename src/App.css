@@ -18,9 +18,13 @@ body {
 /* --------------Navbar---------------- */
 
 .navbar .logo {
-  width: 64.37px;
-  height: 64.35px;
-  margin-left: 48.07px;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-brand img:nth-child(2) {
+  width: 65%;
+  margin-left: 10px;
 }
 
 .navbar-nav .nav-item {
@@ -54,13 +58,13 @@ body {
 
 /* ------------Hero Section--------------- */
 .hero {
-  bottom: -80px;
+  bottom: -6%;
   position: absolute;
   z-index: 1;
   left: 0px;
   right: 0px;
   margin: auto;
-  width: 62%;
+  width: 100%;
 }
 
 
@@ -69,14 +73,14 @@ body {
 }
 
 .heroSection .title h1 {
+  margin-top: 20%;
   font-style: normal;
   font-weight: 600;
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 37px;
 }
 
 .heroSection .subTitle {
-  font-size: 26px;
+  font-size: 20px;
   line-height: 32.68px;
   text-decoration: none;
   letter-spacing: 0.1em;
@@ -103,22 +107,14 @@ body {
 }
 
 .aboutSection h3 {
-  font-weight: 600;
-  font-size: 40px;
-  font-size: 60px;
-  line-height: 75px;
-  text-align: center;
-  letter-spacing: 0.005em;
-  color: #fff;
+  font-size: 40px !important;
+  line-height: unset !important;
 }
 
 .aboutSection h3 span {
-  display: block;
-  font-size: 46px;
-  line-height: 60px;
-  font-weight: 400;
-  width: 64%;
-  margin: auto;
+  font-size: 37px !important;
+  line-height: unset !important;
+  width: 100% !important;
 }
 
 .aboutImagesContainer {
@@ -217,16 +213,21 @@ body {
 /* --------------Info Section---------------- */
 .right_image {
   position: absolute;
-  top: 8%;
+  top: 0px;
   right: 0px;
-  width: 43%;
+  width: 65%;
+}
+
+.infoSection .container {
+  height: 100%;
+  margin-top: 60%;
 }
 
 .infoSection p {
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: 0.005em;
   color: #737373;
 }
@@ -249,36 +250,46 @@ body {
   margin: auto;
 }
 
-.rectangles {
-  margin-top: 30px;
+.infoSection h3 {
+  font-size: 40px;
+  line-height: unset;
+  margin-bottom: 0;
 }
 
-.rectangle p {
-  color: #121212;
-  margin-bottom: 0px;
-  font-size: 35px;
-  font-weight: 500;
+.infoSection .subTitle {
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 400;
+  margin: auto;
 }
 
 .rectangle {
   border: 1.5px solid #D0D0D0;
   border-radius: 10px;
-  padding: 30px 45px;
+  padding: 15px 15px;
   margin-top: 15px;
-  padding-bottom: 50px;
 }
 
 .rectangle h4 {
-  font-size: 40px;
-  line-height: 48px;
-  font-size: 75px;
-  line-height: 94px;
+  font-size: 50px;
   margin-bottom: 0px;
+}
+
+.rectangle p {
+  color: #121212;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 /* -----------------Feature section---------------- */
 .featureSection, .footerSection {
   background-color: #121212 !important;
+}
+
+.featureSection .carousel-caption {
+  display: block !important;
 }
 
 .featureSection h4 {
@@ -295,8 +306,7 @@ body {
 
 .featureSection h1 {
   margin-top: 25px;
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 22px;
   text-align: center;
   letter-spacing: 0.005em;
   color: #fff;
@@ -304,8 +314,7 @@ body {
 }
 
 .featureSection p {
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 15px;
   letter-spacing: 0.005em;
   text-align: center;
   color: #969696;
@@ -314,6 +323,8 @@ body {
 }
 
 .featureSection .carousel-item img {
+  width: 70% !important;
+  height: 175px;
   margin: auto;
   margin-bottom: 17rem;
 }
@@ -334,16 +345,22 @@ body {
   background-color: #fff;
 }
 
+.featureSection button.carousel-control-prev, .featureSection button.carousel-control-next {
+  top: 70%;
+}
+
 /* -------------Scnd Range Section------------- */
 .scndSection h3.first {
+  line-height: unset;
+  font-size: 30px;
   color: #1B1B1B;
-  margin-top: 1rem;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .scndSection span.first {
   display: block;
-  font-size: 50px;
+  font-size: 21px;
   line-height: 1.2;
 }
 
@@ -351,25 +368,31 @@ body {
   border: 1px solid #D0D0D0;
   filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.25));
   border-radius: 10px;
-  padding: 20px 40px;
-  margin-top: 25px;
+  padding: 5px 10px;
+  margin-top: 15px;
 }
 
 .scndSection svg {
   width: 18.49px;
 }
 
+.scndSection .treats img {
+  width: 36% !important;
+}
+
 .scndSection .treats h3 {
-  font-size: 75px;
-  line-height: 65px;
+  font-size: 40px;
+  line-height: 30px;
   color: #121212;
 }
 
+
 .scndSection .treats h3 span {
-  font-size: 36px;
+  font-size: 15px;
   font-weight: 400;
   width: 100%;
   color: #121212;
+  line-height: unset;
 }
 
 .scndRangeBox .rangeLabel1, .scndRangeBox .rangeLabel2 {
@@ -384,14 +407,14 @@ body {
 }
 
 .scndRangeBox2 {
-  padding: 20px 55px;
+  padding: 4px 5px;
   background: #F2F2F2;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .scndRangeBox2 h1, .scndRangeBox2 p {
-  font-size: 26px;
+  font-size: 15px;
   color: #121212;
   font-weight: 600;
 }
@@ -400,6 +423,7 @@ body {
   color: #737373;
   font-weight: 400;
   line-height: 1.2;
+  font-size: 13px;
 }
 
 .scndRangeBox2 p.second a, .scndRangeBox2 p.second a svg, .comingSoon a svg {
@@ -496,74 +520,104 @@ background-color: #9a905d;
 }
 
 .comingSoon .firstRow {
-  padding-top: 7%;
+  padding-top: 1%;
+}
+
+.comingSoon h3 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.comingSoon h3 span {
+  font-size: 25px;
+  line-height: 20px;
 }
 
 .comingSoon .cards div[class^="card"] {
-  padding: 30px;
+  padding: 8px;
   border-radius: 10px;
   margin-bottom: 30px;
+  padding-top: 20px;
 }
-.comingSoon .cards div[class^="card"] h4{
-  font-size: 28px;
-  font-weight:600;
+
+.comingSoon .cards div[class^="card"] h4 {
+  font-size: 18px;
+  font-weight: 600;
 }
-.comingSoon .cards div[class^="card"] p{
+
+.comingSoon .cards div[class^="card"] p {
   color: #737373;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
 }
-.comingSoon .cards .card1{
-  background-color:  #F5E7FF;
+
+.comingSoon .cards .card1 {
+  background-color: #F5E7FF;
 }
-.comingSoon .cards .card2{
-  background-color:  #E3FFE6;
+
+.comingSoon .cards .card2 {
+  background-color: #E3FFE6;
 }
-.comingSoon .cards .card3{
-  background-color:  #FFF3DC;;
+
+.comingSoon .cards .card3 {
+  background-color: #FFF3DC;
+  ;
 }
-.comingSoon .cards .card4{
+
+.comingSoon .cards .card4 {
   background-color: #FFE1E1;
 }
-.comingSoon .firstRow a{
+
+.comingSoon .firstRow a {
   text-decoration: none;
   color: #2AAF44;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 .coinhoundLogo {
   position: absolute;
-  width: 90px;
+  width: 70px;
   background: #000;
-  height: 90px;
+  height: 70px;
   border-radius: 70px;
   left: 0px;
   right: 0px;
   margin: auto;
-  top: -24px;
+  top: -40px;
   bottom: 0px;
   text-align: center;
 }
-.coinhoundLogo img{
+
+.coinhoundLogo img {
   padding-top: 12px;
 }
+
 /* ----------------Footer Section---------------- */
-.footerSection .container{
-  padding-top: 5rem;
+.footerSection .container {
+  padding-top: 2rem;
 }
+.footerSection h3{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #fff;
+    line-height: 35px;
+}
+
 .footerSection p {
   color: #737373 !important;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 15px;
 }
 
 .footerSection .socialIcons a {
   color: #fff;
-  font-size: 35px;
+  font-size: 25px;
   padding-right: 24px;
 }
+
 .footerSection .socialIcons a svg {
   fill: #fff;
   height: 37px;
@@ -571,25 +625,34 @@ background-color: #9a905d;
 .contact_box {
   background: rgba(242, 242, 242, 0.05);
   border-radius: 6px;
-  padding: 10px 15px;
-  margin-top: 25px;
+  padding: 5px 8px;
+  margin-top: 10px;
 }
+
 .contact_box span {
   color: rgba(255, 255, 255, 0.5);
 }
+
 .contact_box p {
   color: #fff !important;
   margin-bottom: 0px;
-  font-size: 25px;
+  font-size: 17px;
   word-break: break-word;
+}
+.partner{
+  display: flex;
+  margin-top: 10px;
 }
 .partner a {
   display: inline-block;
-  padding-top: 38px;
-  padding-right: 35px;
+  padding-top: 15px;
+  padding-right: 2px;
+}
+.partner a img{
+  width: 70%!important;
 }
 .footerSection .big-dog img {
-  width: 65%;
-  float: right;
-  margin-right: 63px;
+  width: 35%;
+  margin: auto;
+  display: block;
 }

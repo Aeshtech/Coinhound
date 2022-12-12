@@ -1,0 +1,240 @@
+/*---------------Small devices (landscape phones, 576px and up) -------------*/
+@media (min-width: 576px) {
+    /* .home .navbar-brand{
+} */
+}
+
+
+
+
+/*--------------- Medium devices (tablets, 768px and up)----------------------*/
+@media (min-width: 768px) {}
+
+
+/*----------------Large devices (desktops, 992px and up)----------------------*/
+@media (min-width: 992px) {
+    .navbar-brand img:nth-child(1) {
+        margin-left: 30px;
+    }
+
+    .navbar-brand img:nth-child(2) {
+        width: unset;
+        margin-left: 15px;
+    }
+
+    .navbar .logo {
+        width: 64.37px;
+        height: 64.35px;
+    }
+
+    .heroSection .title h1 {
+        margin-top: unset;
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .heroSection .subTitle {
+        font-size: 26px;
+    }
+
+    .hero {
+        bottom: -80px;
+        width: 62%;
+    }
+
+    .aboutSection h3 {
+        font-size: 60px !important;
+        line-height: 75px !important;
+    }
+
+    .aboutSection h3 span {
+        font-size: 46px !important;
+        line-height: 60px !important;
+        width: 64% !important;
+    }
+
+    .right_image {
+        top: 8%;
+        width: 43%;
+    }
+
+    .infoSection .container {
+        margin-top: 10%;
+    }
+
+    .infoSection h3 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .infoSection .subTitle {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .infoSection p {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .rectangles {
+        margin-top: 30px;
+    }
+
+    .rectangle {
+        padding: 30px 45px;
+        padding-bottom: 50px;
+    }
+
+    .rectangle h4 {
+        font-size: 75px;
+        line-height: 94px;
+    }
+
+    .rectangle p {
+        font-size: 35px;
+    }
+
+    .featureSection .carousel-item img:nth-child(1) {
+        width: 360.99px !important;
+        height: 272.57px !important;
+    }
+
+    .featureSection h1 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .featureSection p {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .scndSection h3.first {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .scndSection span.first {
+        font-size: 50px;
+    }
+
+    .scndSection h3.first {
+        font-size: 60px;
+        color: #1B1B1B;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    .scndSection span.first {
+        margin-top: 0;
+        display: block;
+        font-size: 35px;
+    }
+
+    .scndRangeBox {
+        padding: 20px 40px;
+        margin-top: 25px;
+    }
+
+    .scndSection .treats img {
+        width: unset !important;
+    }
+
+    .scndSection .treats h3 {
+        font-size: 75px;
+        line-height: 65px;
+    }
+
+    .scndSection .treats h3 span {
+        font-size: 36px;
+        line-height: 60px;
+    }
+
+    .scndRangeBox2 {
+        padding: 20px 55px;
+        margin-top: 20px;
+    }
+
+    .scndRangeBox2 h1, .scndRangeBox2 p {
+        font-size: 26px;
+    }
+
+    .scndRangeBox2 p {
+        font-size: 18px;
+    }
+
+    .comingSoon .firstRow {
+        padding-top: 7%;
+    }
+
+    .comingSoon h3 {
+        font-size: 60px;
+        line-height: 75px;
+    }
+
+    .comingSoon h3 span {
+        font-size: 46px;
+        line-height: 60px;
+    }
+
+    .comingSoon .firstRow a {
+        font-size: 26px;
+    }
+
+    .comingSoon .cards div[class^="card"] {
+        padding: 30px !important;
+    }
+
+    .comingSoon .cards div[class^="card"] h4 {
+        font-size: 28px;
+    }
+
+    .comingSoon .cards div[class^="card"] p {
+        font-size: 24px;
+    }
+
+    .coinhoundLogo {
+        width: 90px;
+        height: 90px;
+        top: -24px;
+    }
+    .footerSection .container {
+        padding-top: 5rem;
+      }
+      .footerSection .big-dog img {
+        width: 65%;
+        float: right;
+        margin-right: 63px;
+        display: unset;
+      }
+      .footerSection h3{
+        font-size: 60px;
+        line-height: 75px;
+      }
+      .footerSection p {
+        font-size: 28px;
+        line-height: 35px;
+      }
+      .footerSection .socialIcons a {
+        font-size: 35px;
+      }
+      .contact_box {
+        padding: 10px 15px;
+        margin-top: 25px;
+      }
+      .contact_box p {
+        font-size: 25px;
+      }
+      .partner{
+        display: unset;
+        margin-top: unset;
+      }
+      .partner a {
+        padding-top: 38px;
+        padding-right: 35px;
+      }
+      .partner a img{
+        width: unset!important;
+      }
+}

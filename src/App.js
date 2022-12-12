@@ -1,4 +1,5 @@
 import './App.css';
+import './responsive.css';
 import About from './components/About/About';
 import Feature from './components/Feature/Feature';
 import Home from './components/Home/Home';
