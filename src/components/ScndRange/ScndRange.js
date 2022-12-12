@@ -19,7 +19,7 @@ export default function ScndRange() {
     return (
         <>
             <section className="scndSection section d-flex align-items-center">
-                <div className="container h-100">
+                <div className="container">
                     <h3 className='first'>Stake CND, earn Treats</h3>
                     <span className='first text-center'>
                         Making Coinhound accessible to all with <br /> dynamic staking and access.

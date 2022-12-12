@@ -28,9 +28,9 @@
     }
 
     .heroSection .title h1 {
-        margin-top: unset;
+        margin-top: 40px;
         font-size: 60px;
-        line-height: 75px;
+        line-height: 65px;
     }
 
     .heroSection .subTitle {
@@ -78,7 +78,7 @@
     }
 
     .rectangles {
-        margin-top: 30px;
+        margin-top: 4%;
     }
 
     .rectangle {

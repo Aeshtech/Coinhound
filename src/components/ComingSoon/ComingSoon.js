@@ -3,8 +3,8 @@ import React from 'react'
 export default function ComingSoon() {
     return (
         <>
-            <section className="section comingSoon">
-                <div className="container h-100">
+            <section className="section comingSoon d-flex align-items-center">
+                <div className="container">
                     <div className="row firstRow d-flex align-items-center justify-content-center flex-column flex-lg-row-reverse">
                         <div className="col-sm-5">
                             <h3>Curious, yet?

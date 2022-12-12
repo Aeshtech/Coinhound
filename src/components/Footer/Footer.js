@@ -9,7 +9,7 @@ import {
 function Footer() {
     return (
         <>
-            <section className="footerSection section">
+            <section className="footerSection section d-flex align-items-center">
                 <div className="container">
                     <div className="row d-flex align-items-center">
                         <div className="col-sm-5">

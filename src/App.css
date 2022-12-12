@@ -225,12 +225,12 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 65%;
+  width: 80%;
 }
 
 .infoSection .container {
   height: 100%;
-  margin-top: 60%;
+  margin-top: 70%;
 }
 
 .infoSection p {
@@ -630,7 +630,7 @@ background-color: #9a905d;
 
 .footerSection .socialIcons a svg {
   fill: #fff;
-  height: 37px;
+  height: 25px;
 }
 .contact_box {
   background: rgba(242, 242, 242, 0.05);

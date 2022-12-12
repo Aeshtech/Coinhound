@@ -3,7 +3,7 @@ import React from 'react'
 export default function Feature() {
   return (
     <section className="featureSection section text-center d-flex align-items-center" id="feature">
-      <div className="container h-100">
+      <div className="container">
         <h4>COINHOUND FEATURES</h4>
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
