@@ -1,0 +1,230 @@
+/* ================================Side Navbar================================ */
+nav.dNavbar {
+    height: 69px;
+    background-color: #fff;
+    border-bottom: 1px solid #D0D0D0;
+    position: fixed;
+    width: 100%;
+}
+
+.dNavbar .brandName {
+    margin-left: 30px;
+}
+
+#connectWallet {
+    width: 221px;
+    height: 40px;
+    background-color: #492767;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    ;
+}
+
+#sideNavbar {
+    display: flex;
+    position: absolute;
+    top: 69px;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 90px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    border-right: 1px solid #D0D0D0;
+    /* transition: all 0.2s linear; */
+}
+
+#sideNavbar:hover {
+    width: 268px;
+    transition: all 0.3s ease;
+}
+
+.mainView {
+    margin-left: 90px;
+    height: 100vh;
+    padding-top: 69px;
+}
+.mainView .form-control:focus{
+    box-shadow: none;
+}
+#sideNavbar ul {
+    list-style: none;
+    padding-left: 0px;
+    position: relative;
+}
+
+#sideNavbar ul li:first-child {
+    margin-top: 10%;
+}
+
+#sideNavbar ul .l6, #sideNavbar ul .l7, #sideNavbar ul .l8 {
+    position: absolute;
+}
+
+#sideNavbar ul .l6 {
+    top: 50%;
+}
+
+#sideNavbar ul .l7 {
+    top: 60%;
+}
+
+#sideNavbar ul .l8 {
+    top: 80%;
+}
+
+#sideNavbar .icon1, #sideNavbar .icon2 {
+    height: 27px;
+    width: 34px;
+    margin-right: 35px;
+}
+
+#sideNavbar .icon3, #sideNavbar .icon5 {
+    width: 27.84px;
+    height: 27.84px;
+    margin-right: 40px;
+}
+
+#sideNavbar .icon4 {
+    width: 36px;
+    height: 31px;
+    margin-right: 32px;
+}
+
+#sideNavbar .icon6 {
+    width: 23px;
+    height: 27px;
+    margin-right: 45px;
+}
+
+#sideNavbar .icon7 {
+    height: 24px;
+    width: 30px;
+    margin-right: 39px;
+}
+
+#sideNavbar .icon8 {
+    height: 29px;
+    width: 29px;
+    margin-right: 39px;
+}
+
+#sideNavbar a {
+    position: relative;
+    display: table;
+    width: 268px;
+    height: 58px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#sideNavbar img {
+    position: relative;
+    top: 5px;
+    left: 4%;
+    text-align: center;
+}
+
+#sideNavbar li .nav-item {
+    position: relative;
+    top: 6px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.63px;
+    color: #000000;
+}
+
+#sideNavbar a:hover {
+    background-color: rgba(113, 113, 113, 0.15);
+}
+
+/* =============================Splash Screen=============== */
+.splashScreen .mainhound {
+    width: 65%;
+    margin: auto;
+}
+
+.splashScreen .splashtitle span {
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #000000;
+    letter-spacing: 10px;
+    margin-top: 30px;
+}
+
+.splashScreen .splashtitle h1 {
+    font-size: 78.88px;
+    font-weight: 600;
+    line-height: 99px;
+    letter-spacing: 0.005em;
+}
+
+/* ==============================Scan Wallet========================= */
+.scanWallet {
+    padding-left: 7%;
+}
+
+.scanWallet h1 {
+    font-size: 50px;
+    line-height: 62.85px;
+}
+
+.scanWallet .badge {
+    font-size: 14px;
+    height: 30px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.scanWallet .subTitle {
+    font-weight: 400;
+    font-Size: 26px;
+    line-height: 32.68px;
+    color: #737373;
+    max-width: 658px;
+}
+
+.scanWallet .svgDiv {
+    width: 75%;
+    margin-left: 10%;
+}
+
+.scanWallet .walletDiv {
+    background-color: #EDEDED;
+    height: 78px;
+}
+
+.scanWallet .col-7 {
+    margin-bottom: 10%;
+}
+
+
+.scanWallet .walletDiv input{
+    display: inline-block;
+    border: none;
+    font-size: 28px;
+    font-weight:400;
+    padding-left: 25px;
+}
+.scanWallet .walletDiv input::placeholder{
+    font-size: 28px;
+    font-weight:400;
+    line-height:35.2px;
+}
+.scanWallet .walletDiv button {
+    width: 217px;
+    height: 56px;
+    margin-right: 10px;
+    background: #AAAAAA;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    line-height: 20.11px;
+    font-weight: 600;
+}

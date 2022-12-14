@@ -199,42 +199,57 @@
         height: 90px;
         top: -24px;
     }
+
     .footerSection .container {
         padding-top: 5rem;
-      }
-      .footerSection .big-dog img {
+    }
+
+    .footerSection .big-dog img {
         width: 65%;
         float: right;
         margin-right: 63px;
         display: unset;
-      }
-      .footerSection h3{
+    }
+
+    .footerSection h3 {
         font-size: 60px;
         line-height: 75px;
-      }
-      .footerSection p {
+    }
+
+    .footerSection p {
         font-size: 28px;
         line-height: 35px;
-      }
-      .footerSection .socialIcons a {
+    }
+
+    .footerSection .socialIcons a {
         font-size: 35px;
-      }
-      .contact_box {
+    }
+
+    .contact_box {
         padding: 10px 15px;
         margin-top: 25px;
-      }
-      .contact_box p {
+    }
+
+    .contact_box p {
         font-size: 25px;
-      }
-      .partner{
+    }
+
+    .partner {
         display: unset;
         margin-top: unset;
-      }
-      .partner a {
+    }
+
+    .partner a {
         padding-top: 38px;
         padding-right: 35px;
-      }
-      .partner a img{
-        width: unset!important;
-      }
+    }
+
+    .partner a img {
+        width: unset !important;
+    }
+
+
+    /* -----------------------------DAPP----------------------------------- */
+
+
 }
