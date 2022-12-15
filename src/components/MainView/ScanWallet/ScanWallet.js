@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext} from 'react'
+import Context from '../../../Contexts/Context'
 
 export default function ScanWallet() {
+    const {isWalletConnected} = useContext(Context)
     return (
         <div className='container mainView scanWallet d-flex align-items-center'>
             <div className="row">
@@ -8,7 +10,7 @@ export default function ScanWallet() {
                     <div className='d-flex align-items-start flex-column'>
                         <div className='d-flex align-items-center justify-content-start'>
                             <h1 className='d-inline-block me-3 mb-0'>Scan Wallet</h1>
-                            <span class="badge text-dark border" style={{fontSize:"14px"}}>5 Treats</span>
+                            <span className="badge text-dark border" style={{fontSize:"14px"}}>5 Treats</span>
                         </div>
                         <span className='subTitle'>Scan a token and see what kind of holder structure it has and make better investment decisions.</span>
                     </div>
@@ -23,7 +25,11 @@ export default function ScanWallet() {
                 <div className='col-12'>
                     <div className='walletDiv d-flex align-items-center'>
                         <input type="text" className='form-control bg-transparent' placeholder="Enter wallet address"/>
-                        <button className='btn'>Connect Wallet</button>
+                        {
+                            isWalletConnected?
+                            <button className='btn bg-green'>Scan Now</button>
+                            :<button className='btn'>Connect Wallet</button>
+                        }
                     </div>
                 </div>
 

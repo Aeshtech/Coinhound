@@ -1,54 +1,73 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import Context from '../../Contexts/Context';
+
+
+
 export default function Navbar() {
+    const { isWalletConnected, setIsWalletConnected } = useContext(Context);
 
-
-    document.addEventListener("load", () => {
-        console.log("ashish")
+    function resizeMainView() {
         const sideNavbar = document.getElementById('sideNavbar');
-        console.log(sideNavbar);
-
         const mainView = document.getElementsByClassName('mainView')[0];
-        console.log(mainView);
-
-        sideNavbar?.addEventListener('mouseover', () => mainView.style.marginLeft = "268px!important");
-        sideNavbar?.addEventListener('mouseleave', () => mainView.style.marginLeft = "90px!important");
-    });
+        sideNavbar?.addEventListener('mouseover', () => mainView.style.marginLeft = "268px");
+        sideNavbar?.addEventListener('mouseleave', () => mainView.style.marginLeft = "90px");
+    }
 
     return (
         <>
 
             <div>
-                <nav class="navbar navbar-expand-lg dNavbar">
+                <nav className="navbar navbar-expand-lg dNavbar">
                     <div className="container-fluid">
-                        <ul class="nav nav-column">
-                            <a class="nav-link p-0" href="/#">
+                        <ul className="nav nav-column">
+                            <Link className="nav-link p-0" to={"/"}>
                                 <div className='brandName'>
                                     <img src="./img/COINHOUND.png" alt="" className='mw-100' />
                                 </div>
-                            </a>
+                            </Link>
                         </ul>
                         <div>
-                            <button type="button" id='connectWallet'>Connect Wallet</button>
+                            <button type="button" id='connectWallet' onClick={()=>setIsWalletConnected(!isWalletConnected)}>Connect Wallet</button>
                         </div>
                     </div>
                 </nav>
-                <div className='sideNavbar' id='sideNavbar'>
+                <div className='sideNavbar overflow-y-auto' id='sideNavbar' onMouseOver={() => { resizeMainView() }}>
                     <ul className="">
-                        <li className='l1'>
-                            <Link to={"/"}>
-                                <img src="./img/icons/wallet.svg" alt="" className='mw-100 icon1' />
+                        {isWalletConnected ?
+                            <span className='navCategory c1'>MY COINHOUND</span>
+                            : null
+                        }
+                        <li className={isWalletConnected ? "l1 wConnected" : "l1"}>
+                            <Link to={"/dashboard"}>
+                                {isWalletConnected ?
+                                    <img src="./img/icons/Clock.svg" alt="" className='mw-100 icon1' />
+                                    :
+                                    <img src="./img/icons/Wallet.svg" alt="" className='mw-100 icon1' />
+                                }
                                 <span className='nav-item'>Dashboard</span>
                             </Link>
                         </li>
+                        {isWalletConnected ?
+                            <>
+                                <li className='l1'>
+                                    <Link to={"/dashboard"}>
+                                        <img src="./img/icons/Tracking.svg" alt="" className='mw-100 icon1' />
+                                        <span className='nav-item'>Tracking</span>
+                                    </Link>
+                                </li>
+                                <span className='navCategory c2'>TOOLS</span>
+                            </>
+                            : null
+                        }
                         <li className='l2'>
-                            <Link to={"/scanWallet"}>
+                            <Link to={"/preScanWallet"}>
                                 <img src="./img/icons/wallet.svg" alt="" className='mw-100 icon2' />
                                 <span className='nav-item'>Scan Wallet</span>
                             </Link>
                         </li>
                         <li className='l3'>
-                            <Link>
+                            <Link to={"scanToken"}>
                                 <img src="./img/icons/dollar.svg" alt="" className='mw-100 icon3' />
                                 <span className='nav-item'>Scan Token</span>
                             </Link>
@@ -65,6 +84,10 @@ export default function Navbar() {
                                 <span className='nav-item'>Scan Blockchain</span>
                             </Link>
                         </li>
+                        {isWalletConnected ?
+                            <span className='navCategory c3'>DOG HOUSE</span>
+                            : null
+                        }
                         <li className='l6'>
                             <Link>
                                 <img src="./img/icons/dog.svg" alt="" className='mw-100 icon6' />

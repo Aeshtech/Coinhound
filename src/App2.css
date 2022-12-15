@@ -1,4 +1,8 @@
 /* ================================Side Navbar================================ */
+.bg-green {
+    background-color: #2AAF44 !important;
+}
+
 nav.dNavbar {
     height: 69px;
     background-color: #fff;
@@ -26,14 +30,13 @@ nav.dNavbar {
     position: absolute;
     top: 69px;
     bottom: 0;
-    height: 100%;
+    /* height: 100%; */
     left: 0;
     width: 90px;
     background-color: #fff;
     overflow: hidden;
     transition: width 0.2s linear;
     border-right: 1px solid #D0D0D0;
-    /* transition: all 0.2s linear; */
 }
 
 #sideNavbar:hover {
@@ -45,10 +48,13 @@ nav.dNavbar {
     margin-left: 90px;
     height: 100vh;
     padding-top: 69px;
+    transition: all 0.3s ease;
 }
-.mainView .form-control:focus{
+
+.mainView .form-control:focus {
     box-shadow: none;
 }
+
 #sideNavbar ul {
     list-style: none;
     padding-left: 0px;
@@ -59,20 +65,12 @@ nav.dNavbar {
     margin-top: 10%;
 }
 
-#sideNavbar ul .l6, #sideNavbar ul .l7, #sideNavbar ul .l8 {
+#sideNavbar ul .l8 {
     position: absolute;
 }
 
-#sideNavbar ul .l6 {
-    top: 50%;
-}
-
-#sideNavbar ul .l7 {
-    top: 60%;
-}
-
 #sideNavbar ul .l8 {
-    top: 80%;
+    bottom: 0%;
 }
 
 #sideNavbar .icon1, #sideNavbar .icon2 {
@@ -141,6 +139,17 @@ nav.dNavbar {
     background-color: rgba(113, 113, 113, 0.15);
 }
 
+#sideNavbar .navCategory{
+    color:#737373;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#sideNavbar .navCategory.c1, #sideNavbar .navCategory.c2,  #sideNavbar .navCategory.c3{
+    margin-top: 7%;
+}
 /* =============================Splash Screen=============== */
 .splashScreen .mainhound {
     width: 65%;
@@ -169,9 +178,10 @@ nav.dNavbar {
     padding-left: 7%;
 }
 
-.scanWallet h1 {
+.mainView h1 {
     font-size: 50px;
     line-height: 62.85px;
+    margin-bottom: 0;
 }
 
 .scanWallet .badge {
@@ -181,7 +191,7 @@ nav.dNavbar {
     font-weight: 600;
 }
 
-.scanWallet .subTitle {
+.mainView .subTitle {
     font-weight: 400;
     font-Size: 26px;
     line-height: 32.68px;
@@ -204,18 +214,20 @@ nav.dNavbar {
 }
 
 
-.scanWallet .walletDiv input{
+.scanWallet .walletDiv input {
     display: inline-block;
     border: none;
     font-size: 28px;
-    font-weight:400;
+    font-weight: 400;
     padding-left: 25px;
 }
-.scanWallet .walletDiv input::placeholder{
+
+.scanWallet .walletDiv input::placeholder {
     font-size: 28px;
-    font-weight:400;
-    line-height:35.2px;
+    font-weight: 400;
+    line-height: 35.2px;
 }
+
 .scanWallet .walletDiv button {
     width: 217px;
     height: 56px;
@@ -227,4 +239,38 @@ nav.dNavbar {
     font-size: 16px;
     line-height: 20.11px;
     font-weight: 600;
+}
+
+/* ======================================Dashboard=================================== */
+.dashboard .dashCard1, .dashboard .dashCard2 {
+    width: 432px;
+    height: 126px;
+    border-radius: 5px;
+    color: white;
+    padding: 25px 5px 20px 20px
+}
+
+.dashboard .dashCard1 {
+    background: #3D267D;
+}
+
+.dashboard .dashCard2 {
+    background: #9B2073;
+}
+
+.dashboard .dashCard1 button {
+    width: 260px;
+    height: 33px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+    padding: 0;
+}
+.dashboard .dashCard2 button {
+    width: 116px;
+    height: 33px;    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: white;
+    padding: 0;
 }
