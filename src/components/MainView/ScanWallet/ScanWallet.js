@@ -1,9 +1,12 @@
 import React, { useContext} from 'react'
 import Context from '../../../Contexts/Context'
+import Navbar from '../../Navbar/Navbar'
 
 export default function ScanWallet() {
     const {isWalletConnected} = useContext(Context)
     return (
+        <>
+        <Navbar/>
         <div className='container mainView scanWallet d-flex align-items-center'>
             <div className="row">
                 <div className="col-7">
@@ -35,5 +38,6 @@ export default function ScanWallet() {
 
             </div>
         </div>
+        </>
     )
 }

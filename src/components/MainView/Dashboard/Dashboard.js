@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from '../../Navbar/Navbar'
 
 export default function Dashboard() {
     return (
+        <>
+        <Navbar/>
         <div className='container mainView dashboard d-flex align-items-start justify-content-center'>
             <div className="row ms-4">
                 <div className='col-12 mt-5'>
@@ -25,5 +28,6 @@ export default function Dashboard() {
                 </div>
             </div>
         </div>
+        </>
     )
 }

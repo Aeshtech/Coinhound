@@ -16,19 +16,18 @@ export default function Navbar() {
 
     return (
         <>
-
             <div>
                 <nav className="navbar navbar-expand-lg dNavbar">
                     <div className="container-fluid">
                         <ul className="nav nav-column">
-                            <Link className="nav-link p-0" to={"/"}>
+                            <Link className="nav-link p-0" to={"/splash"}>
                                 <div className='brandName'>
                                     <img src="./img/COINHOUND.png" alt="" className='mw-100' />
                                 </div>
                             </Link>
                         </ul>
                         <div>
-                            <button type="button" id='connectWallet' onClick={()=>setIsWalletConnected(!isWalletConnected)}>Connect Wallet</button>
+                            <button type="button" id='connectWallet' onClick={() => setIsWalletConnected(!isWalletConnected)}>Connect Wallet</button>
                         </div>
                     </div>
                 </nav>
@@ -62,25 +61,41 @@ export default function Navbar() {
                         }
                         <li className='l2'>
                             <Link to={"/preScanWallet"}>
-                                <img src="./img/icons/wallet.svg" alt="" className='mw-100 icon2' />
+                                {isWalletConnected ?
+                                    <img src="./img/icons/ScanWallet2.svg" alt="" className='mw-100 icon2' />
+                                    :
+                                    <img src="./img/icons/wallet.svg" alt="" className='mw-100 icon2' />
+                                }
                                 <span className='nav-item'>Scan Wallet</span>
                             </Link>
                         </li>
                         <li className='l3'>
-                            <Link to={"scanToken"}>
-                                <img src="./img/icons/dollar.svg" alt="" className='mw-100 icon3' />
+                            <Link to={"/scanToken"}>
+                                {isWalletConnected ?
+                                    <img src="./img/icons/ScanToken2.svg" alt="" className='mw-100 icon3' />
+                                    :
+                                    <img src="./img/icons/dollar.svg" alt="" className='mw-100 icon3' />
+                                }
                                 <span className='nav-item'>Scan Token</span>
                             </Link>
                         </li>
                         <li className='l4'>
                             <Link>
-                                <img src="./img/icons/vector2.svg" alt="" className='mw-100 icon4' />
+                                {isWalletConnected ?
+                                    <img src="./img/icons/Trending.svg" alt="" className='mw-100 icon4' />
+                                    :
+                                    <img src="./img/icons/vector2.svg" alt="" className='mw-100 icon4' />
+                                }
                                 <span className='nav-item'>Trend Analysis</span>
                             </Link>
                         </li>
                         <li className='l5'>
                             <Link>
-                                <img src="./img/icons/dollar.svg" alt="" className='mw-100 icon5' />
+                                {isWalletConnected ?
+                                    <img src="./img/icons/ScanBlockchain.svg" alt="" className='mw-100 icon5' />
+                                    :
+                                    <img src="./img/icons/dollar.svg" alt="" className='mw-100 icon5' />
+                                }
                                 <span className='nav-item'>Scan Blockchain</span>
                             </Link>
                         </li>
@@ -88,16 +103,25 @@ export default function Navbar() {
                             <span className='navCategory c3'>DOG HOUSE</span>
                             : null
                         }
-                        <li className='l6'>
-                            <Link>
-                                <img src="./img/icons/dog.svg" alt="" className='mw-100 icon6' />
-                                <span className='nav-item'>Treats</span>
-                            </Link>
-                        </li>
+                        {isWalletConnected ?
+                            <li className='l6'>
+                                <Link>
+                                    <img src="./img/icons/Bone.svg" alt="" className='mw-100 icon6' />
+                                    <span className='nav-item'>Stake CND</span>
+                                </Link>
+                            </li>
+                            :
+                            <li className='l6'>
+                                <Link>
+                                    <img src="./img/icons/dog.svg" alt="" className='mw-100 icon6' />
+                                    <span className='nav-item'>Treats</span>
+                                </Link>
+                            </li>
+                        }
                         <li className='l7'>
                             <Link>
                                 <img src="./img/icons/vector1.svg" alt="" className='mw-100 icon7' />
-                                <span className='nav-item'>Collar</span>
+                                <span className='nav-item'> {isWalletConnected ? "Buy Collar" : "Collar"}</span>
                             </Link>
                         </li>
                         <li className='l8'>

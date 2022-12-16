@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function Home() {
+  const Navigate = useNavigate();
   return (
     <>
       <section className="section home">
@@ -27,7 +29,7 @@ export default function Home() {
                 </li>
               </ul>
               <form className="d-flex">
-                <button className="btn btn-success navBtn">ACCESS DAPP</button>
+                <button className="btn btn-success navBtn" onClick={()=>Navigate("/splash")}>ACCESS DAPP</button>
               </form>
             </div>
           </div>
