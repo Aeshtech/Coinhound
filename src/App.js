@@ -7,6 +7,7 @@ import Dashboard from './components/MainView/Dashboard/Dashboard';
 import ScanToken from './components/MainView/ScanToken/ScanToken';
 import ScanWallet from './components/MainView/ScanWallet/ScanWallet';
 import Splash from './components/MainView/Splash';
+import TrendAnalysis from './components/MainView/TrendAnalysis/TrendAnalysis';
 import Context from './Contexts/Context';
 import './responsive.css';
 // import About from './components/About/About';
@@ -56,6 +57,7 @@ function App() {
                 <Route path="/dashboard" exact element={<Dashboard />} />
                 <Route path="/preScanWallet" exact element={<ScanWallet />} />
                 <Route path="/scanToken" exact element={<ScanToken />} />
+                <Route path="/trendAnalysis" exact element={<TrendAnalysis />} />
               </>
             )}
           </Routes>

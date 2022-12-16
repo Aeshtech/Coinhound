@@ -3,7 +3,7 @@ import Context from '../../../Contexts/Context'
 import Navbar from '../../Navbar/Navbar'
 
 export default function ScanWallet() {
-    const {isWalletConnected} = useContext(Context)
+    const {isWalletConnected} = useContext(Context);
     return (
         <>
         <Navbar/>

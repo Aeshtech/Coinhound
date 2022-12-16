@@ -274,3 +274,59 @@ nav.dNavbar {
     color: white;
     padding: 0;
 }
+
+/* ===========================Trending Analysis ======================================== */
+
+.trend .svgDiv{
+    width: 30%;
+    margin-left: 35%;
+}
+.mainView .walletAddress{
+    background-color: #EDEDED;
+    width: 649px;
+    height: 60px;
+}
+.mainView .walletAddress input{
+    font-size: 26px;
+    width: 90%;
+    font-weight: 600;
+    line-height: 2;
+    display: inline-block;
+}
+.mainView .walletAddress .copy{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.mainView .walletAddress .copy:hover{
+    color:#2AAF44
+}
+.trend button.trackWallet{
+    width: 246px;
+    height: 56px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.trend .listWrapper h4{
+    font-size: 26px;
+    font-weight: 600;
+}
+.trend .listWrapper .header {
+    height: 35px;
+}
+.trend .listWrapper .header span{
+    font-size: 14px;
+    font-weight: 600;
+    color:#737373;
+}
+.trend .listWrapper .span1{
+    font-size: 16px;
+    font-weight: 400;
+}
+.trend .listWrapper .span2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #138E4A;
+}

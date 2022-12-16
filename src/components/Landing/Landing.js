@@ -7,11 +7,29 @@ import Feature from './Feature/Feature';
 import Information from './Information/Information';
 import ScndRange from './ScndRange/ScndRange';
 import Footer from './Footer/Footer';
-
+// import ReactFullpage from '@fullpage/react-fullpage';
 export default function Landing() {
+
+  // const anchors = ["first"]
   return (
     <>
-    <Scroller
+      {/* <ReactFullpage
+        //  anchors={}
+        onLeave={(origin, destination, direction) => {
+          console.log();
+        }}
+
+        render={({ state, fullpageApi }) => {
+          return (
+            <>
+              
+            </>
+          )
+        }}
+      /> */}
+
+
+      <Scroller
         curPage={1}
         onBeforeScroll={(from, to) => { }}
         onAfterScroll={(page) => { }}
@@ -19,11 +37,11 @@ export default function Landing() {
       >
         <Home />
         <About />
-        <Information/>
+        <Information />
         <Feature />
-        <ScndRange/>
-        <ComingSoon/>
-        <Footer/>
+        <ScndRange />
+        <ComingSoon />
+        <Footer />
       </Scroller>
     </>
   )

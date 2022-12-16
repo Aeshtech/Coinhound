@@ -33,6 +33,7 @@ export default function Navbar() {
                 </nav>
                 <div className='sideNavbar overflow-y-auto' id='sideNavbar' onMouseOver={() => { resizeMainView() }}>
                     <ul className="">
+                        <div className='overflow-auto' style={{maxHeight:"92%"}}>
                         {isWalletConnected ?
                             <span className='navCategory c1'>MY COINHOUND</span>
                             : null
@@ -80,7 +81,7 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li className='l4'>
-                            <Link>
+                            <Link to={"/trendAnalysis"}>
                                 {isWalletConnected ?
                                     <img src="./img/icons/Trending.svg" alt="" className='mw-100 icon4' />
                                     :
@@ -104,14 +105,14 @@ export default function Navbar() {
                             : null
                         }
                         {isWalletConnected ?
-                            <li className='l6'>
+                            <li className="l6">
                                 <Link>
                                     <img src="./img/icons/Bone.svg" alt="" className='mw-100 icon6' />
                                     <span className='nav-item'>Stake CND</span>
                                 </Link>
                             </li>
                             :
-                            <li className='l6'>
+                            <li className='l6 mt-5'>
                                 <Link>
                                     <img src="./img/icons/dog.svg" alt="" className='mw-100 icon6' />
                                     <span className='nav-item'>Treats</span>
@@ -124,6 +125,7 @@ export default function Navbar() {
                                 <span className='nav-item'> {isWalletConnected ? "Buy Collar" : "Collar"}</span>
                             </Link>
                         </li>
+                        </div>
                         <li className='l8'>
                             <Link>
                                 <img src="./img/icons/logout.svg" alt="" className='mw-100 icon8' />
