@@ -7,7 +7,7 @@ export default function TrendAnalysis() {
     return (
         <>
             <Navbar />
-            <div className='container mainView trend me-0 pe-0'>
+            <div className='container-fluid mainView trend overflow-auto'>
                 <div className="row mt-4">
 
                     <div className='col-5'>

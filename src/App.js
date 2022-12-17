@@ -4,6 +4,7 @@ import './App.css';
 import './App2.css';
 import Landing from './components/Landing/Landing';
 import Dashboard from './components/MainView/Dashboard/Dashboard';
+import HolderStructure from './components/MainView/HolderStructure/HolderStructure';
 import ScanToken from './components/MainView/ScanToken/ScanToken';
 import ScanWallet from './components/MainView/ScanWallet/ScanWallet';
 import Splash from './components/MainView/Splash';
@@ -58,6 +59,7 @@ function App() {
                 <Route path="/preScanWallet" exact element={<ScanWallet />} />
                 <Route path="/scanToken" exact element={<ScanToken />} />
                 <Route path="/trendAnalysis" exact element={<TrendAnalysis />} />
+                <Route path="/holderStructure" exact element={<HolderStructure />} />
               </>
             )}
           </Routes>

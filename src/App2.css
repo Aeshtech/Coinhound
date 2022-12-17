@@ -45,7 +45,7 @@ nav.dNavbar {
 }
 
 .mainView {
-    margin-left: 90px;
+    padding-left: 90px;
     height: 100vh;
     padding-top: 69px;
     transition: all 0.3s ease;
@@ -150,6 +150,10 @@ nav.dNavbar {
 #sideNavbar .navCategory.c1, #sideNavbar .navCategory.c2,  #sideNavbar .navCategory.c3{
     margin-top: 7%;
 }
+
+#sideNavbar li.active{
+    border-left: 4px solid #3D267D;
+}
 /* =============================Splash Screen=============== */
 .splashScreen .mainhound {
     width: 65%;
@@ -243,7 +247,7 @@ nav.dNavbar {
 
 /* ======================================Dashboard=================================== */
 .dashboard .dashCard1, .dashboard .dashCard2 {
-    width: 432px;
+    width: 96%;
     height: 126px;
     border-radius: 5px;
     color: white;
@@ -301,7 +305,7 @@ nav.dNavbar {
 .mainView .walletAddress .copy:hover{
     color:#2AAF44
 }
-.trend button.trackWallet{
+.trend button.trackWallet, .holderStructure button.trackWallet{
     width: 246px;
     height: 56px;
     font-size: 16px;
@@ -309,24 +313,47 @@ nav.dNavbar {
     margin-top: 20px;
     font-weight: 600;
 }
-.trend .listWrapper h4{
+.trend .listWrapper h4, .holderStructure h4.holdersTitle{
     font-size: 26px;
     font-weight: 600;
 }
-.trend .listWrapper .header {
+.trend .listWrapper .header, .holderStructure .listWrapper .header{
     height: 35px;
 }
-.trend .listWrapper .header span{
+.trend .listWrapper .header span, .holderStructure .listWrapper .header span{
     font-size: 14px;
     font-weight: 600;
     color:#737373;
 }
-.trend .listWrapper .span1{
+.trend .listWrapper .span1, .holderStructure .listWrapper .span1{
     font-size: 16px;
     font-weight: 400;
 }
-.trend .listWrapper .span2{
+.trend .listWrapper .span2, .holderStructure .listWrapper .span2{
     font-size: 16px;
     font-weight: 600;
     color: #138E4A;
+}
+
+/* ================================Holder Structure============================ */
+.holderStructure .svgDiv{
+    width: 50%;
+    margin: auto;
+}
+.holderStructure .cardsWrapper .card{
+    width: 96%;
+    height: 155px;
+} 
+.holderStructure .cardsWrapper .card img{
+    width: 72px;
+    height: 112px;
+}
+.holderStructure .cardsWrapper h5{
+    font-size: 50px;
+    font-weight:600;
+}
+.holderStructure .cardsWrapper h6{
+    font-size: 28px;
+    font-weight:600;
+    line-height: 36px;
 }

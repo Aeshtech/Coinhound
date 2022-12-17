@@ -1,14 +1,15 @@
 import React, { useContext } from 'react'
+import { useNavigate } from 'react-router-dom';
 import Context from '../../../Contexts/Context'
 import Navbar from '../../Navbar/Navbar';
 
 export default function ScanToken() {
     const { isWalletConnected } = useContext(Context);
-
+    const Navigate = useNavigate();
     return (
         <>
         <Navbar/>
-        <div className='container mainView scanWallet d-flex align-items-center'>
+        <div className='container mainView scanWallet d-flex align-items-center overflow-auto'>
             <div className="row">
                 <div className="col-7">
                     <div className='d-flex align-items-start flex-column'>
@@ -34,7 +35,7 @@ export default function ScanToken() {
                         <input type="text" className='form-control bg-transparent' placeholder="Enter token address" />
                         {
                             isWalletConnected ?
-                                <button className='btn bg-green'>Scan Now</button>
+                                <button className='btn bg-green' onClick={()=>Navigate("/holderStructure")}>Scan Now</button>
                                 : <button className='btn'>Connect Wallet</button>
                         }
                     </div>

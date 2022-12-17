@@ -7,7 +7,7 @@ export default function ScanWallet() {
     return (
         <>
         <Navbar/>
-        <div className='container mainView scanWallet d-flex align-items-center'>
+        <div className='container mainView scanWallet d-flex align-items-center overflow-auto'>
             <div className="row">
                 <div className="col-7">
                     <div className='d-flex align-items-start flex-column'>
@@ -15,7 +15,7 @@ export default function ScanWallet() {
                             <h1 className='d-inline-block me-3 mb-0'>Scan Wallet</h1>
                             <span className="badge text-dark border" style={{fontSize:"14px"}}>5 Treats</span>
                         </div>
-                        <span className='subTitle'>Scan a token and see what kind of holder structure it has and make better investment decisions.</span>
+                        <span className='subTitle'>Scan and learn how a particular wallet is making or losing money, learn about their top trades and current holdings.</span>
                     </div>
                 </div>
 
