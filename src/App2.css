@@ -154,6 +154,9 @@ nav.dNavbar {
 #sideNavbar li.active{
     border-left: 4px solid #3D267D;
 }
+#sideNavbar li.active span{
+    color: #3D267D!important;
+}
 /* =============================Splash Screen=============== */
 .splashScreen .mainhound {
     width: 65%;
